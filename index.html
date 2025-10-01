@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chitwan I.T Solutions Pvt.-Office Automation Solutions Ltd</title>
+    <link rel="stylesheet" href="./css/stayle.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4d276fa6f1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Body Overlay for Mobile Menu -->
+    <div class="body-overlay"></div>
+
+    <!-- Navigation Bar - Common for all pages -->
+    <nav class="main-navbar">
+      <div class="nav-bar">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="image/logo.png" alt="Chitwan IT Solutions" />
+            </a>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="solutions.html">Solution</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="right">
+            <div class="info-button">
+              <img src="image/info.png" alt="Info" />
+            </div>
+            <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div class="dropdown_menu">
+        <div class="close_btn">
+          <div class="menu_logo"><img src="image/logo.png" alt="Logo" /></div>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul class="mobile-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="solutions.html">Solution</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-contact">
+          <p class="offcanvas-mail">
+            📧 chitwanitsolutions<br />pvtltd@gmail.com
+          </p>
+          <p class="offcanvas-contactno">📞 9851151072</p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Image Slider Section - Only for index.html -->
+    <section class="hero-slider">
+      <div class="slider-container">
+        <div class="slider-images">
+          <!-- Slide 1 -->
+          <div class="slide active">
+            <img src="image/ptz.png" alt="Security Camera Solutions" />
+            <div class="slider-text left-align">
+              <p>Seamless Tech<br />Solutions</p>
+              <a href="solutions.html"><button>Find Out</button></a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img
+              src="image/fiber-optic-internet.jpg"
+              alt="Fiber Optic Solutions"
+            />
+            <div class="slider-text center-align">
+              <p>
+                Total System<br />
+                Relibility
+              </p>
+              <a href="about.html"><button>Learn More</button></a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <img
+              src="image/Dome-Surveillance-Cameras.jpg"
+              alt="Surveillance Solutions"
+            />
+            <div class="slider-text right-align">
+              <p>
+                Secure, Connect<br />
+                & Support
+              </p>
+              <a href="contact.html"><button>Contact Us</button></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Previous and Next Buttons -->
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+        <!-- Dot Indicators -->
+        <div class="dots-container">
+          <span class="dot active-dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offcanvas Menu - Common for all pages -->
+    <div class="offcanvas-menu">
+      <div class="close_btn">
+        <div class="menu_logo"><img src="image/logo.png" alt="Logo" /></div>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="offcanvas-header">
+        <p>
+          Chitwan I.T Solutions Pvt. Ltd is a brand that provides sales and
+          service of best quality security and optical fiber solutions.
+        </p>
+      </div>
+      <div class="offcanvas-contact">
+        <h3>Contact Info</h3>
+        <h4>Ganesh Market-03 Narayangarh, Chitwan, Nepal 44200</h4>
+        <p class="offcanvas-mail">📧 chitwanit@chitwanit.com.np</p>
+        <p class="offcanvas-contactno">📞 9851151072</p>
+      </div>
+      <ul class="menu">
+        <h3>Learn More</h3>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="offcanvas-socialmedia">
+        <h4>Follow Us</h4>
+        <div class="social-icons-container">
+          <div class="social-icon">
+            <a href="https://www.facebook.com/chitwanit" target="_blank">
+              <img src="image/Facebook_Logo_2023.png" alt="Facebook" />
+            </a>
+            <span class="social-tooltip">Facebook</span>
+          </div>
+          <div class="social-icon">
+            <a href="https://www.twitter.com/chitwanit" target="_blank">
+              <img src="image/twiter.png" alt="Twitter" />
+            </a>
+            <span class="social-tooltip">Twitter</span>
+          </div>
+          <div class="social-icon">
+            <a href="https://www.instagram.com/chitwanit" target="_blank">
+              <img src="image/instragram.png" alt="Instagram" />
+            </a>
+            <span class="social-tooltip">Instagram</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1) HERO / INTRO -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Reliable IT & Security Solutions</h1>
+            <p>
+              Optical fiber networking, CCTV installation, IT support — we
+              provide trusted and sustainable solutions.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn-primary">Get Service</a>
+              <a href="#services" class="btn-secondary">Our Services</a>
+            </div>
+          </div>
+          <div class="hero-feature">
+            <div class="feature-box">
+              <h3>Free Site Survey</h3>
+              <p>Free site measurement and consultation for home/office.</p>
+              <ul class="feature-list">
+                <li>24/7 Support</li>
+                <li>Certified Technicians</li>
+                <li>Warranty & Maintenance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2) ABOUT / WHY CHOOSE US -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+              We are a professional local IT service provider. From network
+              design to CCTV and fiber closure, we deliver complete solutions —
+              ensuring quality materials and timely service.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <h3>Key Highlights</h3>
+            <ul class="highlights-list">
+              <li>Experienced & Certified Team</li>
+              <li>Fast Response & 24/7 Support</li>
+              <li>Quality Optical Fiber & CCTV Hardware</li>
+              <li>Competitive Pricing & Warranty</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) SERVICES OVERVIEW -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <article class="service-card">
+            <h4>Optical Fiber Networking</h4>
+            <p>
+              FTTx, backbone installation, splicing, testing and maintenance.
+            </p>
+          </article>
+
+          <!-- Service Card 2 -->
+          <article class="service-card">
+            <h4>CCTV Installation & Maintenance</h4>
+            <p>
+              High-resolution cameras, NVR setup, remote monitoring and periodic
+              maintenance.
+            </p>
+          </article>
+
+          <!-- Service Card 3 -->
+          <article class="service-card">
+            <h4>Network Security Solutions</h4>
+            <p>
+              Firewall setup, VPN configuration, network monitoring and security
+              audits.
+            </p>
+          </article>
+
+          <!-- Service Card 4 -->
+          <article class="service-card">
+            <h4>IT Support & Maintenance</h4>
+            <p>
+              24/7 technical support, system maintenance, troubleshooting and
+              on-site service.
+            </p>
+          </article>
+
+          <!-- Service Card 5 -->
+          <article class="service-card">
+            <h4>PABX System Solutions</h4>
+            <p>
+              Complete business telephone systems installation, configuration
+              and maintenance for efficient communication.
+            </p>
+          </article>
+
+          <!-- Service Card 6 -->
+          <article class="service-card">
+            <h4>Structured Cabling</h4>
+            <p>
+              Professional network cabling solutions for offices, data centers
+              and commercial buildings with proper organization.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p>
+              Ready to secure your business? Contact us for a free consultation
+              and quote.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Address</h4>
+                  <p>Ganesh Market-03 Narayangarh, Chitwan, Nepal 44200</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>9851151072</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>chitwanitsolutionspvtltd@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form class="form" id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input type="tel" name="phone" placeholder="Your Phone" />
+              </div>
+              <div class="form-group">
+                <select name="service" required>
+                  <option value="">Select Service</option>
+                  <option value="Optical Fiber Networking">
+                    Optical Fiber Networking
+                  </option>
+                  <option value="CCTV Installation">CCTV Installation</option>
+                  <option value="Network Security">Network Security</option>
+                  <option value="IT Support">IT Support</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div
+                id="formMessage"
+                style="margin-bottom: 10px; color: green; font-weight: 600"
+              ></div>
+              <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyEywqlVINWsL-YO_2DSRWST7TPalvtzm6rN0sW7lrNLjL2Z4IN6_kdLlXKZqx1hnrz/exec";
+      const form = document.getElementById("contactForm");
+      const formMessage = document.getElementById("formMessage");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+
+        fetch(scriptURL, { method: "POST", body: formData })
+          .then((response) => response.text())
+          .then(() => {
+            formMessage.style.color = "green";
+            formMessage.textContent = "✅ Message sent successfully!";
+            form.reset();
+
+            // ✅ Clear message after 15 seconds
+            setTimeout(() => {
+              formMessage.textContent = "";
+            }, 10000);
+          })
+          .catch((err) => {
+            formMessage.style.color = "red";
+            formMessage.textContent = "⚠️ Failed: " + err;
+
+            // ✅ Also clear error message after 15 seconds
+            setTimeout(() => {
+              formMessage.textContent = "";
+            }, 10000);
+          });
+      });
+    </script>
+
+    <!-- Contact & Map Section -->
+    <section id="contact-map" class="contact-map-section">
+      <div class="container">
+        <div class="contact-map-content">
+          <!-- Left Side - Text Content -->
+          <div class="contact-info-side">
+            <div class="business-info">
+              <h3>Chitwan IT Solutions Pvt. Ltd.</h3>
+              <div class="location-details">
+                <p class="address">
+                  Ganesh Market-03 Narayangarh, Chitwan, Nepal 44200
+                </p>
+
+                <a
+                  href="https://www.google.com/maps/place/Chitwan+It+Solution+Pvt.+Ltd./@27.6938554,84.4223086,19.29z/data=!4m6!3m5!1s0x3994fb6a30c8757f:0x105cd513216323e7!8m2!3d27.6940708!4d84.4222271!16s%2Fg%2F11ptvwnth7?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D"
+                  class="view-map-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View larger map
+                </a>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="contact-convincer">
+              <h4>Convinced yet? Let's make something great together.</h4>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <strong>Address</strong>
+                  <p>Ganesh Market-03 Narayangarh,<br />Chitwan, Nepal 44200</p>
+                </div>
+                <div class="contact-item">
+                  <strong>Phone</strong>
+                  <p>(977) 9851151072</p>
+                </div>
+                <div class="contact-item">
+                  <strong>E-mail</strong>
+                  <p>chitwanitsolutionspvtltd@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side - Map -->
+          <div class="map-side">
+            <div class="map-container">
+              <!-- Google Maps Embed -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.5286107583042!2d84.42230863625613!3d27.69385539900507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb6a30c8757f%3A0x105cd513216323e7!2sChitwan%20It%20Solution%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1759289845609!5m2!1sen!2snp"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <div class="map-footer">
+                <div class="map-branding">
+                  <span class="google-logo">Google</span>
+                  <span class="map-terms">Map data ©2024 Google</span>
+                </div>
+                <div class="map-links">
+                  <a href="#" class="map-link">Terms</a>
+                  <a href="#" class="map-link">Report a map error</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/star-rating.js"></script>
+
+    <!-- Simple Call to Action Section -->
+    <section id="cta" class="cta-simple">
+      <div class="container">
+        <div class="cta-simple-content">
+          <h2>Ready to Upgrade Your IT Infrastructure?</h2>
+          <p>
+            From Optical Fiber to CCTV solutions, we've got you covered. Let's
+            build your secure and connected future together.
+          </p>
+          <a href="contact.html" class="btn-primary">Get a Free Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img src="image/logo.png" alt="Chitwan IT Solution" />
+              <h3>Chitwan IT Solutions Pvt. Ltd.</h3>
+            </div>
+            <p class="footer-description">
+              Providing best quality security and optical fiber solutions with
+              exceptional service and support.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="solutions.html">Solution</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="contact-info">
+              <p>📍 Ganesh Market-03 Narayangarh, Chitwan, Nepal 44200</p>
+              <p>📧 chitwanitsolutionspvtltd@gmail.com</p>
+              <p>📞 9851151072</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/chitwanit" target="_blank">
+                <img src="image/Facebook_Logo_2023.png" alt="Facebook" />
+              </a>
+              <a href="https://www.twitter.com/chitwanit" target="_blank">
+                <img src="image/twiter.png" alt="Twitter" />
+              </a>
+              <a href="https://www.instagram.com/chitwanit" target="_blank">
+                <img src="image/instragram.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright Section -->
+      </div>
+      <div class="copyright-section">
+        <div class="copyright-container">
+          <div class="copyright-left">
+            <p>
+              &copy; 2024 Chitwan IT Solutions Pvt. Ltd. All rights reserved.
+            </p>
+          </div>
+          <div class="copyright-right">
+            <p>
+              Designed by
+              <span class="design-credit">Chitwan IT Solution</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
+</html>
